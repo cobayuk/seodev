@@ -17,22 +17,22 @@
     margin: 0 10px;
   }
 
-  main {
+  .content-utm main {
     flex: 2;
   }
 
-  sidebar {
+  .content-utm sidebar {
     flex: 1;
   }
 
-  .related-posts{
+  .content-utm .related-posts{
     margin: 25px;
   }
 }
 
 /* Tambahkan gaya khusus untuk tampilan tablet dan mobile */
 @media only screen and (max-width: 767px) {
-  main, sidebar {
+  .content-utm main, .content-utm sidebar {
     width: 100%;
   }
 }
