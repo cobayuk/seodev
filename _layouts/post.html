@@ -27,8 +27,8 @@ layout: default
       {% endif %}
       
       {% if page.video_embed %} {% assign videoInfo = 'post__info-video' %} {% endif %}
-      <div class="col {% if page.video_embed %}col-12{% else %}col-12 col-d-12{% endif %}">
-        <div class="post__info {{videoInfo}}">
+      <div class="col {% if page.video_embed %}col-12{% else %}col-12{% endif %}">
+        <div class="post__info">
   
           {% if page.tags.size >= 1 %}
             <div class="post__tags">
