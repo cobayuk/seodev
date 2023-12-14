@@ -2,6 +2,41 @@
   box-sizing: border-box;
 }
 
+.content-utm {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tambahkan gaya khusus untuk tampilan desktop */
+@media only screen and (min-width: 768px) {
+  .content-utm {
+    flex-direction: row;
+    margin: 0 10px;
+  }
+
+  main {
+    flex: 2;
+  }
+
+  sidebar {
+    flex: 1;
+  }
+
+  .related-posts{
+    margin: 25px;
+  }
+}
+
+/* Tambahkan gaya khusus untuk tampilan tablet dan mobile */
+@media only screen and (max-width: 767px) {
+  main, sidebar {
+    width: 100%;
+  }
+}
+
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;
