@@ -11,11 +11,15 @@
 
   {% include header.html %}
 
+  <div class="content-utm">
   <!-- begin content -->
   <main class="content" aria-label="Content">
     {{ content }}
   </main>
   <!-- end content -->
+    
+  {% include sidebar.html %}
+  </div>
 
   {% include footer.html %}
 
